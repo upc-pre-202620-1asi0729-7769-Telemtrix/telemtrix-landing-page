@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motus - Gestión Inteligente de Flotas</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Motus-Logo.png" alt="Motus Logo">
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#planes">Planes</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <a href="#" class="nav-btn-login">Iniciar sesión</a>
+
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero bg-grid-pattern">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge badge-outline-primary">Gestión Inteligente de Flotas</span>
+                    <h1>Controla tu flota.<br><span class="text-primary">Anticípate a las fallas.</span></h1>
+                    <p>Digitaliza el mantenimiento preventivo de tus vehículos, reduce imprevistos y mantén tu operación siempre en movimiento.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Iniciar Prueba Gratuita <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-outline-white"><i class="fa-solid fa-play text-primary"></i> Ver cómo funciona</a>
+                    </div>
+
+                    <div class="hero-features">
+                        <div class="hero-feature-item">
+                            <div class="hero-feature-icon"><i class="fa-solid fa-gear"></i></div>
+                            Sin hardware adicional
+                        </div>
+                        <div class="hero-feature-item">
+                            <div class="hero-feature-icon"><i class="fa-solid fa-desktop"></i></div>
+                            Acceso desde cualquier dispositivo
+                        </div>
+                        <div class="hero-feature-item">
+                            <div class="hero-feature-icon"><i class="fa-solid fa-check"></i></div>
+                            Control preventivo de tu flota
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="img/hero-truck.jpg" alt="Flota Motus">
+                        
+                        <div class="floating-alert">
+                            <div class="alert-icon"><i class="fa-solid fa-exclamation"></i></div>
+                            <div class="alert-text">
+                                <h4>Alerta de mantenimiento</h4>
+                                <p>BGT-482 en 500 km</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right" style="color:#94a3b8; font-size:10px; margin-left:8px;"></i>
+                        </div>
+
+                        <div class="floating-dashboard">
+                            <div class="dashboard-header">
+                                <h4>Resumen de la flota</h4>
+                                <span>Ver todo</span>
+                            </div>
+                            <div class="dashboard-grid">
+                                <div class="dashboard-stat stat-total">
+                                    <p>Total</p>
+                                    <p>12</p>
+                                </div>
+                                <div class="dashboard-stat stat-available">
+                                    <p>Disponibles</p>
+                                    <p>9</p>
+                                </div>
+                                <div class="dashboard-stat stat-maintenance">
+                                    <p>Mantenimiento</p>
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            <div class="dashboard-list">
+                                <div class="dashboard-list-item">
+                                    <div class="dot"></div>
+                                    <span class="vehicle-id">BGT-482</span>
+                                    <span class="vehicle-status">En 500 km</span>
+                                </div>
+                                <div class="dashboard-list-item">
+                                    <div class="dot"></div>
+                                    <span class="vehicle-id">KLM-310</span>
+                                    <span class="vehicle-status">En 1,200 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section bg-teal">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-outline-primary-dark">Beneficios</span>
+                <h2 class="text-white">Una flota más eficiente comienza con prevención</h2>
+                <p class="text-white" style="color:#cbd5e1 !important;">Motus te ayuda a reducir imprevistos y mantener información clave de tus vehículos en un solo lugar.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-green"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                    <h3>Ahorro preventivo</h3>
+                    <p>Anticipa mantenimientos y reduce los gastos ocasionados por fallas inesperadas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-yellow"><i class="fa-solid fa-check"></i></div>
+                    <h3>Inspección digital</h3>
+                    <p>Digitaliza las revisiones diarias de tus vehículos y mantén un mejor control operativo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-blue"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>Sin inversión en hardware</h3>
+                    <p>Gestiona tu flota desde una plataforma web accesible desde computadoras y dispositivos móviles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="funcionalidades" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-outline-primary-light">Funcionalidades</span>
+                <h2 class="text-dark">Todo lo que necesitas para cuidar tu flota</h2>
+                <p style="color:#64748b;">Herramientas pensadas para encargados de flota y conductores.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card green">
+                    <div class="feature-icon feature-icon-green"><i class="fa-solid fa-gear"></i></div>
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>Configura revisiones según el kilometraje de cada vehículo.</p>
+                </div>
+                <div class="feature-card yellow">
+                    <div class="feature-icon feature-icon-yellow"><i class="fa-solid fa-bell"></i></div>
+                    <h3>Alertas automáticas</h3>
+                    <p>Identifica vehículos próximos a mantenimiento antes de que aparezca una falla.</p>
+                </div>
+                <div class="feature-card blue">
+                    <div class="feature-icon feature-icon-blue"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h3>Checklist pre-viaje</h3>
+                    <p>Registra inspecciones de luces, fluidos y llantas, incluso cuando no tengas conexión.</p>
+                </div>
+                <div class="feature-card green">
+                    <div class="feature-icon feature-icon-green"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>Registro de odómetro</h3>
+                    <p>Mantén actualizado el kilometraje acumulado de cada unidad.</p>
+                </div>
+                <div class="feature-card yellow">
+                    <div class="feature-icon feature-icon-yellow"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>Reporte de incidencias</h3>
+                    <p>Permite que los conductores reporten fallas mecánicas durante el trayecto.</p>
+                </div>
+                <div class="feature-card blue">
+                    <div class="feature-icon feature-icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3>Historial técnico</h3>
+                    <p>Consulta mantenimientos, intervenciones, checklists y gastos de cada vehículo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="section bg-dark bg-grid-pattern">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-outline-primary-dark">Cómo funciona</span>
+                <h2 class="text-white">Gestiona tu flota en cuatro pasos</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="steps-line"></div>
+
+                <div class="step-card">
+                    <div class="step-number step-number-green">01</div>
+                    <h3>Registra tu flota</h3>
+                    <p>Agrega tus vehículos y la información necesaria para comenzar su seguimiento.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number step-number-green">02</div>
+                    <h3>Registra la operación</h3>
+                    <p>Los conductores ingresan el kilometraje y completan sus inspecciones pre-viaje.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number step-number-green">03</div>
+                    <h3>Motus monitorea</h3>
+                    <p>La plataforma compara el kilometraje con los intervalos de mantenimiento configurados.</p>
+                </div>
+                <div class="step-card highlight">
+                    <div class="step-number step-number-yellow">04</div>
+                    <h3>Anticípate</h3>
+                    <p>Recibe alertas y programa las revisiones antes de que una falla afecte tu operación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-outline-primary-light">Para tu equipo</span>
+                <h2 class="text-dark">Una plataforma para toda tu operación</h2>
+                <p style="color:#64748b;">Herramientas adaptadas a las necesidades de quienes gestionan la flota y quienes están en ruta.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card team-card-light">
+                    <img src="img/team-office.jpg" alt="Encargado de flota">
+                    <div class="team-card-content">
+                        <span class="team-tag team-tag-light">Encargado de flota</span>
+                        <h3>Controla toda tu flota desde un solo lugar</h3>
+                        <ul class="team-list">
+                            <li><i class="fa-solid fa-check"></i> Gestiona tus vehículos</li>
+                            <li><i class="fa-solid fa-check"></i> Administra conductores</li>
+                            <li><i class="fa-solid fa-check"></i> Configura mantenimientos</li>
+                            <li><i class="fa-solid fa-check"></i> Consulta alertas preventivas</li>
+                            <li><i class="fa-solid fa-check"></i> Registra servicios de taller</li>
+                            <li><i class="fa-solid fa-check"></i> Consulta el historial técnico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-card team-card-dark">
+                    <img src="img/driver-truck.jpg" alt="Conductor">
+                    <div class="team-card-content">
+                        <span class="team-tag team-tag-dark">Conductor</span>
+                        <h3>Registra información rápidamente desde tu celular</h3>
+                        <ul class="team-list">
+                            <li><i class="fa-solid fa-check"></i> Visualiza tu vehículo asignado</li>
+                            <li><i class="fa-solid fa-check"></i> Registra el odómetro</li>
+                            <li><i class="fa-solid fa-check"></i> Completa el checklist pre-viaje</li>
+                            <li><i class="fa-solid fa-check"></i> Trabaja incluso sin conexión</li>
+                            <li><i class="fa-solid fa-check"></i> Reporta incidencias mecánicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-outline-primary-light">Planes</span>
+                <h2 class="text-dark">Elige el plan ideal para tu flota</h2>
+                <p style="color:#64748b;">Opciones flexibles según el tamaño y las necesidades de tu operación.</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card dark-top">
+                    <span class="plan-label plan-label-grey">Inicial</span>
+                    <h3 class="plan-title">Flotas pequeñas</h3>
+                    <p class="plan-desc">Para empresas que desean comenzar a digitalizar el mantenimiento de sus vehículos.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Gestión de vehículos</li>
+                        <li><i class="fa-solid fa-check"></i> Registro de odómetro</li>
+                        <li><i class="fa-solid fa-check"></i> Checklist pre-viaje</li>
+                        <li><i class="fa-solid fa-check"></i> Alertas de mantenimiento</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark btn-full">Elegir Plan</a>
+                </div>
+
+                <div class="plan-card featured">
+                    <span class="plan-badge">Recomendado</span>
+                    <span class="plan-label plan-label-green">Profesional</span>
+                    <h3 class="plan-title">Flotas en crecimiento</h3>
+                    <p class="plan-desc">Mayor control para empresas que necesitan centralizar su operación.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Todo lo incluido en Inicial</li>
+                        <li><i class="fa-solid fa-check"></i> Gestión de conductores</li>
+                        <li><i class="fa-solid fa-check"></i> Historial técnico</li>
+                        <li><i class="fa-solid fa-check"></i> Registro de taller</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-full">Elegir Plan</a>
+                </div>
+
+                <div class="plan-card yellow-top">
+                    <span class="plan-label plan-label-grey">Empresarial</span>
+                    <h3 class="plan-title">Flotas con mayor operación</h3>
+                    <p class="plan-desc">Para organizaciones que requieren una solución adaptada al tamaño de su flota.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Gestión integral de flota</li>
+                        <li><i class="fa-solid fa-check"></i> Alertas preventivas</li>
+                        <li><i class="fa-solid fa-check"></i> Historial consolidado</li>
+                        <li><i class="fa-solid fa-check"></i> Asesoría especializada</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark btn-full">Solicitar Asesoría</a>
+                </div>
+            </div>
+            <p class="plans-note">Los precios se definirán de acuerdo con la cantidad de vehículos y el plan seleccionado.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="section bg-light">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <span class="badge badge-outline-primary-light">Contacto</span>
+                    <h2>¿Quieres conocer Motus?</h2>
+                    <p>Solicita una demostración y descubre cómo Motus puede ayudarte a mejorar el mantenimiento y control de tu flota.</p>
+                    
+                    <div class="contact-info-box">
+                        <h3>Motus</h3>
+                        <p>Tu flota siempre en movimiento.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <form>
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label>Correo corporativo</label>
+                                <input type="email" placeholder="nombre@empresa.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" placeholder="+51 999 999 999">
+                            </div>
+                            <div class="form-group">
+                                <label>Tamaño de flota</label>
+                                <select>
+                                    <option>1 - 5 vehículos</option>
+                                    <option>6 - 20 vehículos</option>
+                                    <option>21 - 50 vehículos</option>
+                                    <option>+50 vehículos</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="form-btn">Solicitar Asesoría</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-grid-pattern">
+        <div class="container footer-content">
+            <div class="footer-cta">
+                <div class="footer-cta-text">
+                    <span>Da el siguiente paso</span>
+                    <h2>Mantén tu flota siempre en movimiento.</h2>
+                    <p>Centraliza el mantenimiento, anticipa fallas y mejora el control de tus vehículos con Motus.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Solicitar demostración <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <div class="footer-logo-box">
+                        <span>Motus</span>
+                    </div>
+                    <p>Gestión inteligente de mantenimiento preventivo para flotas de carga ligera.</p>
+                    <p class="footer-slogan">Tu flota siempre en movimiento.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#">Beneficios</a></li>
+                        <li><a href="#">Funcionalidades</a></li>
+                        <li><a href="#">Cómo funciona</a></li>
+                        <li><a href="#">Para tu equipo</a></li>
+                        <li><a href="#">Planes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Centro de ayuda</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <p>Escríbenos</p>
+                            <p>contacto@motus.pe</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <p>Ubicación</p>
+                            <p>Lima, Perú</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" style="font-size:13px; padding:10px 20px; margin-top:16px;">Contáctanos <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Telemtrix - Motus. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
