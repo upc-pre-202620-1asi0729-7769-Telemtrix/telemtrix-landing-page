@@ -1,11 +1,14 @@
 /**
  * Motus landing page - internationalization (i18n).
  * Translates every element marked with a data-i18n attribute between
- * Spanish (default) and English, and remembers the visitor's choice.
+ * English (default) and Spanish, and remembers the visitor's choice.
  */
 
-const DEFAULT_LANGUAGE = 'es';
+const DEFAULT_LANGUAGE = 'en';
 const STORAGE_KEY = 'motus-language';
+
+/* Locale written to the <html lang> attribute for each language. */
+const LOCALES = { en: 'en-US', es: 'es-419' };
 
 /* Translation dictionaries: one entry per data-i18n key. */
 const translations = {
@@ -298,7 +301,7 @@ function saveLanguage(language) {
 function applyLanguage(language) {
     const dictionary = translations[language];
 
-    document.documentElement.lang = language;
+    document.documentElement.lang = LOCALES[language];
 
     document.querySelectorAll('[data-i18n]').forEach((element) => {
         const text = dictionary[element.dataset.i18n];
