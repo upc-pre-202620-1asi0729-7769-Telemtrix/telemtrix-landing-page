@@ -14,8 +14,8 @@
                 <img src="img/Motus-Logo.png" alt="Motus Logo">
             </div>
             
-            <div class="nav-links">
-                <a href="#" data-i18n="nav.home">Home</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#inicio" data-i18n="nav.home">Home</a>
                 <a href="#beneficios" data-i18n="nav.benefits">Benefits</a>
                 <a href="#funcionalidades" data-i18n="nav.features">Features</a>
                 <a href="#como-funciona" data-i18n="nav.how">How it works</a>
@@ -28,16 +28,16 @@
                     <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
                     <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
                 </div>
-                <a href="#" class="nav-btn-login" data-i18n="nav.login">Log in</a>
+                <a href="https://upc-pre-202620-1asi0729-7769-telemtrix.github.io/Telemtrix-FrontEnd/" class="nav-btn-login" data-i18n="nav.login">Log in</a>
             </div>
 
-            <button class="menu-toggle">
+            <button type="button" class="menu-toggle" aria-label="Open menu" data-i18n-aria-label="nav.menu" aria-expanded="false" aria-controls="nav-links">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
 
-    <section class="hero bg-grid-pattern">
+    <section id="inicio" class="hero bg-grid-pattern">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -46,8 +46,8 @@
                     <p data-i18n="hero.text">Digitize the preventive maintenance of your vehicles, reduce unexpected events and keep your operation always on the move.</p>
                     
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary"><span data-i18n="cta.trial">Start Free Trial</span> <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="#" class="btn btn-outline-white"><i class="fa-solid fa-play text-primary"></i> <span data-i18n="cta.how">See how it works</span></a>
+                        <a href="https://upc-pre-202620-1asi0729-7769-telemtrix.github.io/Telemtrix-FrontEnd/" class="btn btn-primary"><span data-i18n="cta.trial">Start Free Trial</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#como-funciona" class="btn btn-outline-white"><i class="fa-solid fa-play text-primary"></i> <span data-i18n="cta.how">See how it works</span></a>
                     </div>
 
                     <div class="hero-features">
@@ -222,7 +222,7 @@
         </div>
     </section>
 
-    <section class="section bg-light">
+    <section id="equipo" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <span class="badge badge-outline-primary-light" data-i18n="team.badge">For your team</span>
@@ -284,7 +284,7 @@
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card3Title">Pre-trip checklist</span></li>
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.starter4">Maintenance alerts</span></li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark btn-full" data-i18n="plans.choose">Choose Plan</a>
+                    <a href="#contacto" class="btn btn-outline-dark btn-full" data-i18n="plans.choose">Choose Plan</a>
                 </div>
 
                 <div class="plan-card featured">
@@ -298,7 +298,7 @@
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card6Title">Technical history</span></li>
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro4">Workshop records</span></li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-full" data-i18n="plans.choose">Choose Plan</a>
+                    <a href="#contacto" class="btn btn-primary btn-full" data-i18n="plans.choose">Choose Plan</a>
                 </div>
 
                 <div class="plan-card yellow-top">
@@ -311,7 +311,7 @@
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent3">Consolidated history</span></li>
                         <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent4">Specialized advisory</span></li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark btn-full" data-i18n="cta.advice">Request Advice</a>
+                    <a href="#contacto" class="btn btn-outline-dark btn-full" data-i18n="cta.advice">Request Advice</a>
                 </div>
             </div>
             <p class="plans-note" data-i18n="plans.note">Prices will be defined according to the number of vehicles and the selected plan.</p>
@@ -334,22 +334,25 @@
 
                 <div class="contact-form-wrapper">
                     <div class="contact-form-card">
-                        <form>
+                        <form id="contact-form" novalidate>
                             <div class="form-group">
-                                <label data-i18n="form.name">Name</label>
-                                <input type="text" placeholder="Enter your name" data-i18n-placeholder="form.namePlaceholder">
+                                <label for="contact-name" data-i18n="form.name">Name</label>
+                                <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Enter your name" data-i18n-placeholder="form.namePlaceholder" aria-describedby="contact-name-error" required>
+                                <small class="form-error" id="contact-name-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.email">Work email</label>
-                                <input type="email" placeholder="name@company.com" data-i18n-placeholder="form.emailPlaceholder">
+                                <label for="contact-email" data-i18n="form.email">Work email</label>
+                                <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="name@company.com" data-i18n-placeholder="form.emailPlaceholder" aria-describedby="contact-email-error" required>
+                                <small class="form-error" id="contact-email-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.phone">Phone</label>
-                                <input type="tel" placeholder="+51 999 999 999">
+                                <label for="contact-phone" data-i18n="form.phone">Phone</label>
+                                <input type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="+51 999 999 999" aria-describedby="contact-phone-error" required>
+                                <small class="form-error" id="contact-phone-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.fleetSize">Fleet size</label>
-                                <select>
+                                <label for="contact-fleet-size" data-i18n="form.fleetSize">Fleet size</label>
+                                <select id="contact-fleet-size" name="fleetSize">
                                     <option data-i18n="form.size1">1 - 5 vehicles</option>
                                     <option data-i18n="form.size2">6 - 20 vehicles</option>
                                     <option data-i18n="form.size3">21 - 50 vehicles</option>
@@ -357,6 +360,7 @@
                                 </select>
                             </div>
                             <button type="submit" class="form-btn" data-i18n="cta.advice">Request Advice</button>
+                            <p class="form-success" id="contact-success" role="status" data-i18n="form.success" hidden>Thank you! We received your request and will contact you soon.</p>
                         </form>
                     </div>
                 </div>
@@ -372,7 +376,7 @@
                     <h2 data-i18n="footer.ctaTitle">Keep your fleet always on the move.</h2>
                     <p data-i18n="footer.ctaText">Centralize maintenance, anticipate breakdowns and improve control of your vehicles with Motus.</p>
                 </div>
-                <a href="#" class="btn btn-primary"><span data-i18n="cta.demo">Request a demo</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn btn-primary"><span data-i18n="cta.demo">Request a demo</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="footer-links">
@@ -383,31 +387,31 @@
                     <p data-i18n="footer.about">Smart preventive maintenance management for light cargo fleets.</p>
                     <p class="footer-slogan" data-i18n="brand.slogan">Your fleet always on the move.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-col">
                     <h4 data-i18n="footer.product">Product</h4>
                     <ul>
-                        <li><a href="#" data-i18n="nav.benefits">Benefits</a></li>
-                        <li><a href="#" data-i18n="nav.features">Features</a></li>
-                        <li><a href="#" data-i18n="nav.how">How it works</a></li>
-                        <li><a href="#" data-i18n="team.badge">For your team</a></li>
-                        <li><a href="#" data-i18n="nav.plans">Plans</a></li>
+                        <li><a href="#beneficios" data-i18n="nav.benefits">Benefits</a></li>
+                        <li><a href="#funcionalidades" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#como-funciona" data-i18n="nav.how">How it works</a></li>
+                        <li><a href="#equipo" data-i18n="team.badge">For your team</a></li>
+                        <li><a href="#planes" data-i18n="nav.plans">Plans</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4 data-i18n="footer.resources">Resources</h4>
                     <ul>
-                        <li><a href="#" data-i18n="footer.help">Help center</a></li>
-                        <li><a href="#" data-i18n="footer.faq">Frequently asked questions</a></li>
-                        <li><a href="#" data-i18n="footer.terms">Terms and conditions</a></li>
-                        <li><a href="#" data-i18n="footer.privacy">Privacy policy</a></li>
+                        <li><a href="#contacto" data-i18n="footer.help">Help center</a></li>
+                        <li><a href="#contacto" data-i18n="footer.faq">Frequently asked questions</a></li>
+                        <li><a href="terms.html" data-i18n="footer.terms">Terms and conditions</a></li>
+                        <li><a href="terms.html#privacy" data-i18n="footer.privacy">Privacy policy</a></li>
                     </ul>
                 </div>
 
@@ -427,19 +431,20 @@
                             <p data-i18n="footer.city">Lima, Peru</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary" style="font-size:13px; padding:10px 20px; margin-top:16px;"><span data-i18n="cta.contactUs">Contact us</span> <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contacto" class="btn btn-primary" style="font-size:13px; padding:10px 20px; margin-top:16px;"><span data-i18n="cta.contactUs">Contact us</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <p data-i18n="footer.rights">© 2026 Telemtrix - Motus. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#" data-i18n="footer.privacyShort">Privacy</a>
-                    <a href="#" data-i18n="footer.termsShort">Terms</a>
+                    <a href="terms.html#privacy" data-i18n="footer.privacyShort">Privacy</a>
+                    <a href="terms.html" data-i18n="footer.termsShort">Terms</a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
