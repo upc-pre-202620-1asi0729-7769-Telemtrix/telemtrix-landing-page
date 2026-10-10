@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title">Motus - Gestión Inteligente de Flotas</title>
+    <title data-i18n="meta.title">Motus - Smart Fleet Management</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -14,75 +14,75 @@
                 <img src="img/Motus-Logo.png" alt="Motus Logo">
             </div>
             
-            <div class="nav-links">
-                <a href="#" data-i18n="nav.home">Inicio</a>
-                <a href="#beneficios" data-i18n="nav.benefits">Beneficios</a>
-                <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
-                <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
-                <a href="#planes" data-i18n="nav.plans">Planes</a>
-                <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#inicio" data-i18n="nav.home">Home</a>
+                <a href="#beneficios" data-i18n="nav.benefits">Benefits</a>
+                <a href="#funcionalidades" data-i18n="nav.features">Features</a>
+                <a href="#como-funciona" data-i18n="nav.how">How it works</a>
+                <a href="#planes" data-i18n="nav.plans">Plans</a>
+                <a href="#contacto" data-i18n="nav.contact">Contact</a>
             </div>
 
             <div class="nav-actions">
-                <div class="lang-switch" role="group" aria-label="Idioma / Language">
-                    <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
-                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                <div class="lang-switch" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
                 </div>
-                <a href="#" class="nav-btn-login" data-i18n="nav.login">Iniciar sesión</a>
+                <a href="https://upc-pre-202620-1asi0729-7769-telemtrix.github.io/Telemtrix-FrontEnd/" class="nav-btn-login" data-i18n="nav.login">Log in</a>
             </div>
 
-            <button class="menu-toggle">
+            <button type="button" class="menu-toggle" aria-label="Open menu" data-i18n-aria-label="nav.menu" aria-expanded="false" aria-controls="nav-links">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
 
-    <section class="hero bg-grid-pattern">
+    <section id="inicio" class="hero bg-grid-pattern">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="badge badge-outline-primary" data-i18n="hero.badge">Gestión Inteligente de Flotas</span>
-                    <h1><span data-i18n="hero.title1">Controla tu flota.</span><br><span class="text-primary" data-i18n="hero.title2">Anticípate a las fallas.</span></h1>
-                    <p data-i18n="hero.text">Digitaliza el mantenimiento preventivo de tus vehículos, reduce imprevistos y mantén tu operación siempre en movimiento.</p>
+                    <span class="badge badge-outline-primary" data-i18n="hero.badge">Smart Fleet Management</span>
+                    <h1><span data-i18n="hero.title1">Take control of your fleet.</span><br><span class="text-primary" data-i18n="hero.title2">Stay ahead of breakdowns.</span></h1>
+                    <p data-i18n="hero.text">Digitize the preventive maintenance of your vehicles, reduce unexpected events and keep your operation always on the move.</p>
                     
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary"><span data-i18n="cta.trial">Iniciar Prueba Gratuita</span> <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="#" class="btn btn-outline-white"><i class="fa-solid fa-play text-primary"></i> <span data-i18n="cta.how">Ver cómo funciona</span></a>
+                        <a href="https://upc-pre-202620-1asi0729-7769-telemtrix.github.io/Telemtrix-FrontEnd/" class="btn btn-primary"><span data-i18n="cta.trial">Start Free Trial</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#como-funciona" class="btn btn-outline-white"><i class="fa-solid fa-play text-primary"></i> <span data-i18n="cta.how">See how it works</span></a>
                     </div>
 
                     <div class="hero-features">
                         <div class="hero-feature-item">
                             <div class="hero-feature-icon"><i class="fa-solid fa-gear"></i></div>
-                            <span data-i18n="hero.feat1">Sin hardware adicional</span>
+                            <span data-i18n="hero.feat1">No additional hardware</span>
                         </div>
                         <div class="hero-feature-item">
                             <div class="hero-feature-icon"><i class="fa-solid fa-desktop"></i></div>
-                            <span data-i18n="hero.feat2">Acceso desde cualquier dispositivo</span>
+                            <span data-i18n="hero.feat2">Access from any device</span>
                         </div>
                         <div class="hero-feature-item">
                             <div class="hero-feature-icon"><i class="fa-solid fa-check"></i></div>
-                            <span data-i18n="hero.feat3">Control preventivo de tu flota</span>
+                            <span data-i18n="hero.feat3">Preventive control of your fleet</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-image">
                     <div class="hero-image-wrapper">
-                        <img src="img/hero-truck.jpg" alt="Flota Motus" data-i18n-alt="alt.heroImage">
+                        <img src="img/hero-truck.jpg" alt="Motus fleet" data-i18n-alt="alt.heroImage">
                         
                         <div class="floating-alert">
                             <div class="alert-icon"><i class="fa-solid fa-exclamation"></i></div>
                             <div class="alert-text">
-                                <h4 data-i18n="hero.alertTitle">Alerta de mantenimiento</h4>
-                                <p data-i18n="hero.alertText">BGT-482 en 500 km</p>
+                                <h4 data-i18n="hero.alertTitle">Maintenance alert</h4>
+                                <p data-i18n="hero.alertText">BGT-482 in 500 km</p>
                             </div>
                             <i class="fa-solid fa-chevron-right" style="color:#94a3b8; font-size:10px; margin-left:8px;"></i>
                         </div>
 
                         <div class="floating-dashboard">
                             <div class="dashboard-header">
-                                <h4 data-i18n="hero.dashTitle">Resumen de la flota</h4>
-                                <span data-i18n="hero.dashAll">Ver todo</span>
+                                <h4 data-i18n="hero.dashTitle">Fleet overview</h4>
+                                <span data-i18n="hero.dashAll">View all</span>
                             </div>
                             <div class="dashboard-grid">
                                 <div class="dashboard-stat stat-total">
@@ -90,11 +90,11 @@
                                     <p>12</p>
                                 </div>
                                 <div class="dashboard-stat stat-available">
-                                    <p data-i18n="hero.dashAvailable">Disponibles</p>
+                                    <p data-i18n="hero.dashAvailable">Available</p>
                                     <p>9</p>
                                 </div>
                                 <div class="dashboard-stat stat-maintenance">
-                                    <p data-i18n="hero.dashMaintenance">Mantenimiento</p>
+                                    <p data-i18n="hero.dashMaintenance">Maintenance</p>
                                     <p>2</p>
                                 </div>
                             </div>
@@ -102,12 +102,12 @@
                                 <div class="dashboard-list-item">
                                     <div class="dot"></div>
                                     <span class="vehicle-id">BGT-482</span>
-                                    <span class="vehicle-status" data-i18n="hero.dashItem1">En 500 km</span>
+                                    <span class="vehicle-status" data-i18n="hero.dashItem1">In 500 km</span>
                                 </div>
                                 <div class="dashboard-list-item">
                                     <div class="dot"></div>
                                     <span class="vehicle-id">KLM-310</span>
-                                    <span class="vehicle-status" data-i18n="hero.dashItem2">En 1,200 km</span>
+                                    <span class="vehicle-status" data-i18n="hero.dashItem2">In 1,200 km</span>
                                 </div>
                             </div>
                         </div>
@@ -120,26 +120,26 @@
     <section id="beneficios" class="section bg-teal">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-outline-primary-dark" data-i18n="nav.benefits">Beneficios</span>
-                <h2 class="text-white" data-i18n="benefits.title">Una flota más eficiente comienza con prevención</h2>
-                <p class="text-white" style="color:#cbd5e1 !important;" data-i18n="benefits.text">Motus te ayuda a reducir imprevistos y mantener información clave de tus vehículos en un solo lugar.</p>
+                <span class="badge badge-outline-primary-dark" data-i18n="nav.benefits">Benefits</span>
+                <h2 class="text-white" data-i18n="benefits.title">A more efficient fleet starts with prevention</h2>
+                <p class="text-white" style="color:#cbd5e1 !important;" data-i18n="benefits.text">Motus helps you reduce unexpected events and keep your vehicles' key information in one place.</p>
             </div>
 
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon benefit-icon-green"><i class="fa-solid fa-arrow-trend-down"></i></div>
-                    <h3 data-i18n="benefits.card1Title">Ahorro preventivo</h3>
-                    <p data-i18n="benefits.card1Text">Anticipa mantenimientos y reduce los gastos ocasionados por fallas inesperadas.</p>
+                    <h3 data-i18n="benefits.card1Title">Preventive savings</h3>
+                    <p data-i18n="benefits.card1Text">Anticipate maintenance and reduce the costs caused by unexpected breakdowns.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon benefit-icon-yellow"><i class="fa-solid fa-check"></i></div>
-                    <h3 data-i18n="benefits.card2Title">Inspección digital</h3>
-                    <p data-i18n="benefits.card2Text">Digitaliza las revisiones diarias de tus vehículos y mantén un mejor control operativo.</p>
+                    <h3 data-i18n="benefits.card2Title">Digital inspection</h3>
+                    <p data-i18n="benefits.card2Text">Digitize the daily checks of your vehicles and keep better operational control.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon benefit-icon-blue"><i class="fa-solid fa-cloud-arrow-up"></i></div>
-                    <h3 data-i18n="benefits.card3Title">Sin inversión en hardware</h3>
-                    <p data-i18n="benefits.card3Text">Gestiona tu flota desde una plataforma web accesible desde computadoras y dispositivos móviles.</p>
+                    <h3 data-i18n="benefits.card3Title">No hardware investment</h3>
+                    <p data-i18n="benefits.card3Text">Manage your fleet from a web platform accessible from computers and mobile devices.</p>
                 </div>
             </div>
         </div>
@@ -148,41 +148,41 @@
     <section id="funcionalidades" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-outline-primary-light" data-i18n="nav.features">Funcionalidades</span>
-                <h2 class="text-dark" data-i18n="features.title">Todo lo que necesitas para cuidar tu flota</h2>
-                <p style="color:#64748b;" data-i18n="features.text">Herramientas pensadas para encargados de flota y conductores.</p>
+                <span class="badge badge-outline-primary-light" data-i18n="nav.features">Features</span>
+                <h2 class="text-dark" data-i18n="features.title">Everything you need to take care of your fleet</h2>
+                <p style="color:#64748b;" data-i18n="features.text">Tools designed for fleet managers and drivers.</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card green">
                     <div class="feature-icon feature-icon-green"><i class="fa-solid fa-gear"></i></div>
-                    <h3 data-i18n="features.card1Title">Mantenimiento preventivo</h3>
-                    <p data-i18n="features.card1Text">Configura revisiones según el kilometraje de cada vehículo.</p>
+                    <h3 data-i18n="features.card1Title">Preventive maintenance</h3>
+                    <p data-i18n="features.card1Text">Set up service checks based on the mileage of each vehicle.</p>
                 </div>
                 <div class="feature-card yellow">
                     <div class="feature-icon feature-icon-yellow"><i class="fa-solid fa-bell"></i></div>
-                    <h3 data-i18n="features.card2Title">Alertas automáticas</h3>
-                    <p data-i18n="features.card2Text">Identifica vehículos próximos a mantenimiento antes de que aparezca una falla.</p>
+                    <h3 data-i18n="features.card2Title">Automatic alerts</h3>
+                    <p data-i18n="features.card2Text">Identify vehicles due for maintenance before a breakdown occurs.</p>
                 </div>
                 <div class="feature-card blue">
                     <div class="feature-icon feature-icon-blue"><i class="fa-solid fa-clipboard-check"></i></div>
-                    <h3 data-i18n="features.card3Title">Checklist pre-viaje</h3>
-                    <p data-i18n="features.card3Text">Registra inspecciones de luces, fluidos y llantas, incluso cuando no tengas conexión.</p>
+                    <h3 data-i18n="features.card3Title">Pre-trip checklist</h3>
+                    <p data-i18n="features.card3Text">Record inspections of lights, fluids and tires, even when you are offline.</p>
                 </div>
                 <div class="feature-card green">
                     <div class="feature-icon feature-icon-green"><i class="fa-solid fa-gauge-high"></i></div>
-                    <h3 data-i18n="features.card4Title">Registro de odómetro</h3>
-                    <p data-i18n="features.card4Text">Mantén actualizado el kilometraje acumulado de cada unidad.</p>
+                    <h3 data-i18n="features.card4Title">Odometer log</h3>
+                    <p data-i18n="features.card4Text">Keep the accumulated mileage of each unit up to date.</p>
                 </div>
                 <div class="feature-card yellow">
                     <div class="feature-icon feature-icon-yellow"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <h3 data-i18n="features.card5Title">Reporte de incidencias</h3>
-                    <p data-i18n="features.card5Text">Permite que los conductores reporten fallas mecánicas durante el trayecto.</p>
+                    <h3 data-i18n="features.card5Title">Incident reporting</h3>
+                    <p data-i18n="features.card5Text">Let drivers report mechanical failures during the trip.</p>
                 </div>
                 <div class="feature-card blue">
                     <div class="feature-icon feature-icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                    <h3 data-i18n="features.card6Title">Historial técnico</h3>
-                    <p data-i18n="features.card6Text">Consulta mantenimientos, intervenciones, checklists y gastos de cada vehículo.</p>
+                    <h3 data-i18n="features.card6Title">Technical history</h3>
+                    <p data-i18n="features.card6Text">Review the maintenance, interventions, checklists and expenses of each vehicle.</p>
                 </div>
             </div>
         </div>
@@ -191,8 +191,8 @@
     <section id="como-funciona" class="section bg-dark bg-grid-pattern">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-outline-primary-dark" data-i18n="nav.how">Cómo funciona</span>
-                <h2 class="text-white" data-i18n="how.title">Gestiona tu flota en cuatro pasos</h2>
+                <span class="badge badge-outline-primary-dark" data-i18n="nav.how">How it works</span>
+                <h2 class="text-white" data-i18n="how.title">Manage your fleet in four steps</h2>
             </div>
 
             <div class="steps-grid">
@@ -200,64 +200,64 @@
 
                 <div class="step-card">
                     <div class="step-number step-number-green">01</div>
-                    <h3 data-i18n="how.step1Title">Registra tu flota</h3>
-                    <p data-i18n="how.step1Text">Agrega tus vehículos y la información necesaria para comenzar su seguimiento.</p>
+                    <h3 data-i18n="how.step1Title">Register your fleet</h3>
+                    <p data-i18n="how.step1Text">Add your vehicles and the information needed to start tracking them.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number step-number-green">02</div>
-                    <h3 data-i18n="how.step2Title">Registra la operación</h3>
-                    <p data-i18n="how.step2Text">Los conductores ingresan el kilometraje y completan sus inspecciones pre-viaje.</p>
+                    <h3 data-i18n="how.step2Title">Record the operation</h3>
+                    <p data-i18n="how.step2Text">Drivers enter the mileage and complete their pre-trip inspections.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number step-number-green">03</div>
-                    <h3 data-i18n="how.step3Title">Motus monitorea</h3>
-                    <p data-i18n="how.step3Text">La plataforma compara el kilometraje con los intervalos de mantenimiento configurados.</p>
+                    <h3 data-i18n="how.step3Title">Motus monitors</h3>
+                    <p data-i18n="how.step3Text">The platform compares the mileage against the configured maintenance intervals.</p>
                 </div>
                 <div class="step-card highlight">
                     <div class="step-number step-number-yellow">04</div>
-                    <h3 data-i18n="how.step4Title">Anticípate</h3>
-                    <p data-i18n="how.step4Text">Recibe alertas y programa las revisiones antes de que una falla afecte tu operación.</p>
+                    <h3 data-i18n="how.step4Title">Stay ahead</h3>
+                    <p data-i18n="how.step4Text">Receive alerts and schedule service checks before a breakdown affects your operation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <section id="equipo" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-outline-primary-light" data-i18n="team.badge">Para tu equipo</span>
-                <h2 class="text-dark" data-i18n="team.title">Una plataforma para toda tu operación</h2>
-                <p style="color:#64748b;" data-i18n="team.text">Herramientas adaptadas a las necesidades de quienes gestionan la flota y quienes están en ruta.</p>
+                <span class="badge badge-outline-primary-light" data-i18n="team.badge">For your team</span>
+                <h2 class="text-dark" data-i18n="team.title">One platform for your entire operation</h2>
+                <p style="color:#64748b;" data-i18n="team.text">Tools tailored to the needs of those who manage the fleet and those who are on the road.</p>
             </div>
 
             <div class="team-grid">
                 <div class="team-card team-card-light">
-                    <img src="img/team-office.jpg" alt="Encargado de flota" data-i18n-alt="team.managerTag">
+                    <img src="img/team-office.jpg" alt="Fleet manager" data-i18n-alt="team.managerTag">
                     <div class="team-card-content">
-                        <span class="team-tag team-tag-light" data-i18n="team.managerTag">Encargado de flota</span>
-                        <h3 data-i18n="team.managerTitle">Controla toda tu flota desde un solo lugar</h3>
+                        <span class="team-tag team-tag-light" data-i18n="team.managerTag">Fleet manager</span>
+                        <h3 data-i18n="team.managerTitle">Control your entire fleet from one place</h3>
                         <ul class="team-list">
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager1">Gestiona tus vehículos</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager2">Administra conductores</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager3">Configura mantenimientos</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager4">Consulta alertas preventivas</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager5">Registra servicios de taller</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager6">Consulta el historial técnico</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager1">Manage your vehicles</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager2">Manage drivers</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager3">Set up maintenance plans</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager4">Check preventive alerts</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager5">Record workshop services</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.manager6">Review the technical history</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="team-card team-card-dark">
-                    <img src="img/driver-truck.jpg" alt="Conductor" data-i18n-alt="team.driverTag">
+                    <img src="img/driver-truck.jpg" alt="Driver" data-i18n-alt="team.driverTag">
                     <div class="team-card-content">
-                        <span class="team-tag team-tag-dark" data-i18n="team.driverTag">Conductor</span>
-                        <h3 data-i18n="team.driverTitle">Registra información rápidamente desde tu celular</h3>
+                        <span class="team-tag team-tag-dark" data-i18n="team.driverTag">Driver</span>
+                        <h3 data-i18n="team.driverTitle">Record information quickly from your phone</h3>
                         <ul class="team-list">
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver1">Visualiza tu vehículo asignado</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver2">Registra el odómetro</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver3">Completa el checklist pre-viaje</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver4">Trabaja incluso sin conexión</span></li>
-                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver5">Reporta incidencias mecánicas</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver1">View your assigned vehicle</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver2">Record the odometer</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver3">Complete the pre-trip checklist</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver4">Work even when offline</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-i18n="team.driver5">Report mechanical incidents</span></li>
                         </ul>
                     </div>
                 </div>
@@ -268,53 +268,53 @@
     <section id="planes" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-outline-primary-light" data-i18n="nav.plans">Planes</span>
-                <h2 class="text-dark" data-i18n="plans.title">Elige el plan ideal para tu flota</h2>
-                <p style="color:#64748b;" data-i18n="plans.text">Opciones flexibles según el tamaño y las necesidades de tu operación.</p>
+                <span class="badge badge-outline-primary-light" data-i18n="nav.plans">Plans</span>
+                <h2 class="text-dark" data-i18n="plans.title">Choose the ideal plan for your fleet</h2>
+                <p style="color:#64748b;" data-i18n="plans.text">Flexible options based on the size and needs of your operation.</p>
             </div>
 
             <div class="plans-grid">
                 <div class="plan-card dark-top">
-                    <span class="plan-label plan-label-grey" data-i18n="plans.starterLabel">Inicial</span>
-                    <h3 class="plan-title" data-i18n="plans.starterTitle">Flotas pequeñas</h3>
-                    <p class="plan-desc" data-i18n="plans.starterDesc">Para empresas que desean comenzar a digitalizar el mantenimiento de sus vehículos.</p>
+                    <span class="plan-label plan-label-grey" data-i18n="plans.starterLabel">Starter</span>
+                    <h3 class="plan-title" data-i18n="plans.starterTitle">Small fleets</h3>
+                    <p class="plan-desc" data-i18n="plans.starterDesc">For companies that want to start digitizing the maintenance of their vehicles.</p>
                     <ul class="plan-features">
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.starter1">Gestión de vehículos</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card4Title">Registro de odómetro</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card3Title">Checklist pre-viaje</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.starter4">Alertas de mantenimiento</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.starter1">Vehicle management</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card4Title">Odometer log</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card3Title">Pre-trip checklist</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.starter4">Maintenance alerts</span></li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark btn-full" data-i18n="plans.choose">Elegir Plan</a>
+                    <a href="#contacto" class="btn btn-outline-dark btn-full" data-i18n="plans.choose">Choose Plan</a>
                 </div>
 
                 <div class="plan-card featured">
-                    <span class="plan-badge" data-i18n="plans.recommended">Recomendado</span>
-                    <span class="plan-label plan-label-green" data-i18n="plans.proLabel">Profesional</span>
-                    <h3 class="plan-title" data-i18n="plans.proTitle">Flotas en crecimiento</h3>
-                    <p class="plan-desc" data-i18n="plans.proDesc">Mayor control para empresas que necesitan centralizar su operación.</p>
+                    <span class="plan-badge" data-i18n="plans.recommended">Recommended</span>
+                    <span class="plan-label plan-label-green" data-i18n="plans.proLabel">Professional</span>
+                    <h3 class="plan-title" data-i18n="plans.proTitle">Growing fleets</h3>
+                    <p class="plan-desc" data-i18n="plans.proDesc">Greater control for companies that need to centralize their operation.</p>
                     <ul class="plan-features">
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro1">Todo lo incluido en Inicial</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro2">Gestión de conductores</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card6Title">Historial técnico</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro4">Registro de taller</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro1">Everything included in Starter</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro2">Driver management</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="features.card6Title">Technical history</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.pro4">Workshop records</span></li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-full" data-i18n="plans.choose">Elegir Plan</a>
+                    <a href="#contacto" class="btn btn-primary btn-full" data-i18n="plans.choose">Choose Plan</a>
                 </div>
 
                 <div class="plan-card yellow-top">
-                    <span class="plan-label plan-label-grey" data-i18n="plans.entLabel">Empresarial</span>
-                    <h3 class="plan-title" data-i18n="plans.entTitle">Flotas con mayor operación</h3>
-                    <p class="plan-desc" data-i18n="plans.entDesc">Para organizaciones que requieren una solución adaptada al tamaño de su flota.</p>
+                    <span class="plan-label plan-label-grey" data-i18n="plans.entLabel">Enterprise</span>
+                    <h3 class="plan-title" data-i18n="plans.entTitle">Larger fleet operations</h3>
+                    <p class="plan-desc" data-i18n="plans.entDesc">For organizations that require a solution tailored to the size of their fleet.</p>
                     <ul class="plan-features">
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent1">Gestión integral de flota</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent2">Alertas preventivas</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent3">Historial consolidado</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent4">Asesoría especializada</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent1">Comprehensive fleet management</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent2">Preventive alerts</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent3">Consolidated history</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.ent4">Specialized advisory</span></li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark btn-full" data-i18n="cta.advice">Solicitar Asesoría</a>
+                    <a href="#contacto" class="btn btn-outline-dark btn-full" data-i18n="cta.advice">Request Advice</a>
                 </div>
             </div>
-            <p class="plans-note" data-i18n="plans.note">Los precios se definirán de acuerdo con la cantidad de vehículos y el plan seleccionado.</p>
+            <p class="plans-note" data-i18n="plans.note">Prices will be defined according to the number of vehicles and the selected plan.</p>
         </div>
     </section>
 
@@ -322,41 +322,45 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-text">
-                    <span class="badge badge-outline-primary-light" data-i18n="nav.contact">Contacto</span>
-                    <h2 data-i18n="contact.title">¿Quieres conocer Motus?</h2>
-                    <p data-i18n="contact.text">Solicita una demostración y descubre cómo Motus puede ayudarte a mejorar el mantenimiento y control de tu flota.</p>
+                    <span class="badge badge-outline-primary-light" data-i18n="nav.contact">Contact</span>
+                    <h2 data-i18n="contact.title">Want to get to know Motus?</h2>
+                    <p data-i18n="contact.text">Request a demo and discover how Motus can help you improve the maintenance and control of your fleet.</p>
                     
                     <div class="contact-info-box">
                         <h3>Motus</h3>
-                        <p data-i18n="brand.slogan">Tu flota siempre en movimiento.</p>
+                        <p data-i18n="brand.slogan">Your fleet always on the move.</p>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper">
                     <div class="contact-form-card">
-                        <form>
+                        <form id="contact-form" novalidate>
                             <div class="form-group">
-                                <label data-i18n="form.name">Nombre</label>
-                                <input type="text" placeholder="Ingresa tu nombre" data-i18n-placeholder="form.namePlaceholder">
+                                <label for="contact-name" data-i18n="form.name">Name</label>
+                                <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Enter your name" data-i18n-placeholder="form.namePlaceholder" aria-describedby="contact-name-error" required>
+                                <small class="form-error" id="contact-name-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.email">Correo corporativo</label>
-                                <input type="email" placeholder="nombre@empresa.com" data-i18n-placeholder="form.emailPlaceholder">
+                                <label for="contact-email" data-i18n="form.email">Work email</label>
+                                <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="name@company.com" data-i18n-placeholder="form.emailPlaceholder" aria-describedby="contact-email-error" required>
+                                <small class="form-error" id="contact-email-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.phone">Teléfono</label>
-                                <input type="tel" placeholder="+51 999 999 999">
+                                <label for="contact-phone" data-i18n="form.phone">Phone</label>
+                                <input type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="+51 999 999 999" aria-describedby="contact-phone-error" required>
+                                <small class="form-error" id="contact-phone-error" aria-live="polite"></small>
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form.fleetSize">Tamaño de flota</label>
-                                <select>
-                                    <option data-i18n="form.size1">1 - 5 vehículos</option>
-                                    <option data-i18n="form.size2">6 - 20 vehículos</option>
-                                    <option data-i18n="form.size3">21 - 50 vehículos</option>
-                                    <option data-i18n="form.size4">+50 vehículos</option>
+                                <label for="contact-fleet-size" data-i18n="form.fleetSize">Fleet size</label>
+                                <select id="contact-fleet-size" name="fleetSize">
+                                    <option data-i18n="form.size1">1 - 5 vehicles</option>
+                                    <option data-i18n="form.size2">6 - 20 vehicles</option>
+                                    <option data-i18n="form.size3">21 - 50 vehicles</option>
+                                    <option data-i18n="form.size4">50+ vehicles</option>
                                 </select>
                             </div>
-                            <button type="submit" class="form-btn" data-i18n="cta.advice">Solicitar Asesoría</button>
+                            <button type="submit" class="form-btn" data-i18n="cta.advice">Request Advice</button>
+                            <p class="form-success" id="contact-success" role="status" data-i18n="form.success" hidden>Thank you! We received your request and will contact you soon.</p>
                         </form>
                     </div>
                 </div>
@@ -368,11 +372,11 @@
         <div class="container footer-content">
             <div class="footer-cta">
                 <div class="footer-cta-text">
-                    <span data-i18n="footer.ctaTag">Da el siguiente paso</span>
-                    <h2 data-i18n="footer.ctaTitle">Mantén tu flota siempre en movimiento.</h2>
-                    <p data-i18n="footer.ctaText">Centraliza el mantenimiento, anticipa fallas y mejora el control de tus vehículos con Motus.</p>
+                    <span data-i18n="footer.ctaTag">Take the next step</span>
+                    <h2 data-i18n="footer.ctaTitle">Keep your fleet always on the move.</h2>
+                    <p data-i18n="footer.ctaText">Centralize maintenance, anticipate breakdowns and improve control of your vehicles with Motus.</p>
                 </div>
-                <a href="#" class="btn btn-primary"><span data-i18n="cta.demo">Solicitar demostración</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn btn-primary"><span data-i18n="cta.demo">Request a demo</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="footer-links">
@@ -380,66 +384,67 @@
                     <div class="footer-logo-box">
                         <span>Motus</span>
                     </div>
-                    <p data-i18n="footer.about">Gestión inteligente de mantenimiento preventivo para flotas de carga ligera.</p>
-                    <p class="footer-slogan" data-i18n="brand.slogan">Tu flota siempre en movimiento.</p>
+                    <p data-i18n="footer.about">Smart preventive maintenance management for light cargo fleets.</p>
+                    <p class="footer-slogan" data-i18n="brand.slogan">Your fleet always on the move.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.product">Producto</h4>
+                    <h4 data-i18n="footer.product">Product</h4>
                     <ul>
-                        <li><a href="#" data-i18n="nav.benefits">Beneficios</a></li>
-                        <li><a href="#" data-i18n="nav.features">Funcionalidades</a></li>
-                        <li><a href="#" data-i18n="nav.how">Cómo funciona</a></li>
-                        <li><a href="#" data-i18n="team.badge">Para tu equipo</a></li>
-                        <li><a href="#" data-i18n="nav.plans">Planes</a></li>
+                        <li><a href="#beneficios" data-i18n="nav.benefits">Benefits</a></li>
+                        <li><a href="#funcionalidades" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#como-funciona" data-i18n="nav.how">How it works</a></li>
+                        <li><a href="#equipo" data-i18n="team.badge">For your team</a></li>
+                        <li><a href="#planes" data-i18n="nav.plans">Plans</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.resources">Recursos</h4>
+                    <h4 data-i18n="footer.resources">Resources</h4>
                     <ul>
-                        <li><a href="#" data-i18n="footer.help">Centro de ayuda</a></li>
-                        <li><a href="#" data-i18n="footer.faq">Preguntas frecuentes</a></li>
-                        <li><a href="#" data-i18n="footer.terms">Términos y condiciones</a></li>
-                        <li><a href="#" data-i18n="footer.privacy">Política de privacidad</a></li>
+                        <li><a href="#contacto" data-i18n="footer.help">Help center</a></li>
+                        <li><a href="#contacto" data-i18n="footer.faq">Frequently asked questions</a></li>
+                        <li><a href="terms.html" data-i18n="footer.terms">Terms and conditions</a></li>
+                        <li><a href="terms.html#privacy" data-i18n="footer.privacy">Privacy policy</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="nav.contact">Contacto</h4>
+                    <h4 data-i18n="nav.contact">Contact</h4>
                     <div class="footer-contact-item">
                         <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
                         <div>
-                            <p data-i18n="footer.writeUs">Escríbenos</p>
+                            <p data-i18n="footer.writeUs">Write to us</p>
                             <p>contacto@motus.pe</p>
                         </div>
                     </div>
                     <div class="footer-contact-item">
                         <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
-                            <p data-i18n="footer.location">Ubicación</p>
-                            <p data-i18n="footer.city">Lima, Perú</p>
+                            <p data-i18n="footer.location">Location</p>
+                            <p data-i18n="footer.city">Lima, Peru</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary" style="font-size:13px; padding:10px 20px; margin-top:16px;"><span data-i18n="cta.contactUs">Contáctanos</span> <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contacto" class="btn btn-primary" style="font-size:13px; padding:10px 20px; margin-top:16px;"><span data-i18n="cta.contactUs">Contact us</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p data-i18n="footer.rights">© 2026 Telemtrix - Motus. Todos los derechos reservados.</p>
+                <p data-i18n="footer.rights">© 2026 Telemtrix - Motus. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#" data-i18n="footer.privacyShort">Privacidad</a>
-                    <a href="#" data-i18n="footer.termsShort">Términos</a>
+                    <a href="terms.html#privacy" data-i18n="footer.privacyShort">Privacy</a>
+                    <a href="terms.html" data-i18n="footer.termsShort">Terms</a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
